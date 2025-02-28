@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Formulário Sem Label</title>
+</head>
 
 <body>
-    <center>
-        <p style="font-size: 100px;">
-            Não tem nada aqui.
-        </p>
-        <a href="MeuCurriculo.html" style="font-size: 100px;">
-            Volte!
-        </a>
-    </center>
-</body>
+    <h1>Formulário Sem Label</h1>
 
-</head>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            Nome:<br>
+            <input type="text" placeholder="Digite seu nome"><br><br>
+
+            Data de Nascimento:<br>
+            <input type="date"><br><br>
+
+            Email:<br>
+            <input type="email" placeholder="Digite seu email"><br><br>
+
+            Senha:<br>
+            <input type="password" placeholder="Digite sua senha"><br><br>
+
+            Gênero:<br>
+            <input type="radio" name="genero" value="masculino"> Masculino<br>
+            <input type="radio" name="genero" value="feminino"> Feminino<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+
+            Motivo do Contato:<br>
+            <select>
+                <option>Selecione um motivo</option>
+                <option>Dúvida</option>
+                <option>Sugestão</option>
+                <option>Reclamação</option>
+            </select><br><br>
+
+            Mensagem:<br>
+            <textarea placeholder="Digite sua mensagem"></textarea><br><br>
+
+            Anexo:<br>
+            <input type="file"><br><br>
+
+            <input type="checkbox"> Aceito receber notificações de resposta<br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
 
 </html>
